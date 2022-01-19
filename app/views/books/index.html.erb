@@ -34,7 +34,7 @@
 </ul>
 <% end %>
 
-<%= form_for(@book) do |f| %>
+<%= form_with model: @book, lokal:true do |f| %>
 <div class="field">
   <%= f.label :title, "Title" %>
   <%= f.text_field :title %>

@@ -5,14 +5,13 @@
 </div>
 <ul>
   <% @book.errors.full_messages.each do |message| %>
-  <li><%= message %></li>
   <% end %>
 </ul>
 <% end %>
 <%=  form_with model: @book, local:true do |f| %>
 <div class="field">
   <%= f.label :title, 'Title' %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title %>tbody
   </div>
   <div class="field">
     <%= f.label :body, 'Body' %>
